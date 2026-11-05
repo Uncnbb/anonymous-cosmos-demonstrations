@@ -1,13 +1,18 @@
 (() => {
   'use strict';
   const runs = window.DEMO_RUNS || [];
-  const titles = {flower:'Flower arrangement',book:'Book manipulation',watering:'Plant watering'};
+  const titles = {flower:'Flower arrangement',book:'Book placement',watering:'Plant watering'};
+  const tasks = {flower:'Pick up a flower from the table and insert it into the vase.',book:'Pick up the book and place it on the bookshelf.',watering:'Pick up the watering can and water the plant.'};
   const format = seconds => `${Math.floor(seconds/60)}:${String(Math.floor(seconds%60)).padStart(2,'0')}`;
   const container = document.getElementById('video-pairs');
   Object.keys(titles).forEach((task,index) => {
     const pair = document.createElement('article');
     pair.className = 'pair'; pair.id = task;
     pair.innerHTML = `<div class="pair-head"><div class="task-title"><span class="task-number">0${index+1}</span><h3>${titles[task]}</h3></div><div class="pair-controls"><button class="play" type="button">Play both</button><button class="restart" type="button">Restart</button><label class="sr-only" for="speed-${task}">Playback speed for ${titles[task]}</label><select id="speed-${task}"><option value="1">1× speed</option><option value="2">2× speed</option><option value="4">4× speed</option></select></div></div><div class="video-grid"></div><p class="pair-note" aria-live="polite">Independent recordings · original timelines · audio removed</p>`;
+    const instruction = document.createElement('p');
+    instruction.className = 'task-instruction';
+    instruction.innerHTML = `<strong>Task:</strong> ${tasks[task]}`;
+    pair.querySelector('.pair-head').after(instruction);
     const grid=pair.querySelector('.video-grid');
     runs.filter(r=>r.task===task).forEach(run=>{
       const figure=document.createElement('figure');figure.className='video-card '+run.backend;
