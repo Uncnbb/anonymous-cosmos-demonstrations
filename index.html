@@ -4,37 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Anonymous supplementary videos: Native and Ours CosmosPolicy demonstrations across three real-world manipulation tasks.">
-  <title>CosmosPolicy · Real-world demonstrations</title>
+  <meta name="description" content="Cosmos3-Edge-Policy-DROID: 20-step denoising, successful trajectory examples with synchronized camera observations.">
+  <title>Cosmos3-Edge-Policy-DROID · Successful trajectory examples</title>
   <link rel="stylesheet" href="./assets/style.css">
   <script src="./assets/data.js" defer></script>
   <script src="./assets/app.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#demonstrations">Skip to demonstrations</a>
-<header class="site-header"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">C</span> CosmosPolicy <span class="brand-sub">/ demonstrations</span></a><nav aria-label="Main navigation"><a href="#demonstrations">Videos</a><a href="#observations">Camera views</a><a href="#protocol">Protocol</a></nav></header>
+<header class="site-header"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">C</span> Cosmos3-Edge-Policy-DROID <span class="brand-sub">/ demonstrations</span></a><nav aria-label="Main navigation"><a href="#demonstrations">Videos</a><a href="#protocol">Protocol</a></nav></header>
 <main id="top">
   <section class="hero wrap">
     <div class="eyebrow"><span></span> Anonymous supplementary material</div>
-    <h1>From observation<br>to <em>real-world action.</em></h1>
-    <p class="intro">Native and accelerated CosmosPolicy execution, shown side by side across three manipulation tasks.</p>
+    <h1>Successful trajectories.<br><em>20 denoising steps.</em></h1>
+    <p class="intro">Cosmos3-Edge-Policy-DROID with a 20-step denoising schedule. Native and Ours successful trajectory examples across three real-world tasks.</p>
     <div class="hero-bottom"><a class="primary-link" href="#demonstrations">Explore the demonstrations <span aria-hidden="true">↗</span></a><div class="facts"><span><b>03</b> Tasks</span><span><b>06</b> Recordings</span><span><b>02</b> Observation views</span></div></div>
     <div class="task-strip" aria-label="Tasks"><a href="#flower"><img src="./assets/images/flower-ours-poster.jpg" alt="Robot manipulating a flower beside a vase"><span><small>01</small> Flower arrangement <i aria-hidden="true">↗</i></span></a><a href="#book"><img src="./assets/images/book-ours-poster.jpg" alt="Robot placing a book on a bookshelf"><span><small>02</small> Book placement <i aria-hidden="true">↗</i></span></a><a href="#watering"><img src="./assets/images/watering-ours-poster.jpg" alt="Robot holding a cup near a plant"><span><small>03</small> Plant watering <i aria-hidden="true">↗</i></span></a></div>
   </section>
   <section class="recordings wrap" id="demonstrations">
-    <div class="section-heading"><div><div class="eyebrow">01 / Recordings</div><h2>Watch the execution.</h2></div><p>Compare both runs from the beginning,<br>or explore each recording independently.</p></div>
+    <div class="section-heading"><div><div class="eyebrow">01 / Recordings</div><h2>Watch the execution.</h2></div><p>Start at the first chunk inference.<br>Watch each video and its two camera views together.</p></div>
     <div id="video-pairs"></div>
   </section>
-  <section class="observations" id="observations"><div class="wrap">
-    <div class="section-heading"><div><div class="eyebrow">02 / Observations</div><h2>A closer look at each chunk.</h2></div><p>Browse the saved wrist and external camera<br>observations throughout a run.</p></div>
-    <div class="explorer-toolbar"><label for="run-select">Recording <select id="run-select"></select></label><span id="frame-status" aria-live="polite"></span></div>
-    <div class="camera-grid"><figure><img id="wrist-frame" alt="Wrist camera observation" width="800" height="450"><figcaption><span class="camera-dot"></span> Wrist camera</figcaption></figure><figure><img id="external-frame" alt="External camera observation" width="800" height="450"><figcaption><span class="camera-dot external"></span> External camera</figcaption></figure></div>
-    <div class="scrubber"><button id="previous-frame" class="icon-btn" aria-label="Previous observation">←</button><label class="sr-only" for="frame-range">Observation index</label><input type="range" id="frame-range" min="0" value="0" step="1"><button id="next-frame" class="icon-btn" aria-label="Next observation">→</button></div>
-    <p class="explorer-note">Each image is an observation saved at a chunk boundary. These snapshots are separate from the continuous videos.</p>
-  </div></section>
-  <section class="protocol wrap" id="protocol"><div class="eyebrow">03 / Recording protocol</div><div class="protocol-grid"><h2>How to read<br>these demonstrations.</h2><div><p>The six recordings compare the Native and Ours backends on three real-world tasks. Execution combines recorded demonstration trajectories with Cosmos-generated residual corrections.</p><p>These are qualitative demonstrations; task success was not formally evaluated in the run logs. The videos retain their supplied timelines, with audio and file metadata removed. Paired playback starts both recordings together, without aligning trajectories or normalizing their durations. The camera explorer includes the two available observation views.</p></div></div></section>
+  <section class="protocol wrap" id="protocol"><div class="eyebrow">02 / Recording protocol</div><div class="protocol-grid"><h2>How to read<br>these demonstrations.</h2><div><p>Successful trajectory examples of Cosmos3-Edge-Policy-DROID with a 20-step denoising schedule, comparing Native and Ours on flower arrangement, book placement, and plant watering.</p><p>Each clip begins at the estimated start of the first chunk inference. The main video and both camera observation streams share one playback timeline. The main-video alignment is approximate, based on robot motion events; camera snapshots retain their recorded relative timestamps and remain visible until the next capture. Playback speed changes all three views together.</p></div></div></section>
 </main>
-<footer class="wrap"><span>CosmosPolicy · Real-world demonstrations</span><span>Anonymous submission</span><a href="#top">Back to top ↑</a></footer>
-<noscript><p class="wrap">Enable JavaScript to use paired playback and the camera explorer. Individual videos are also available in the assets/videos directory.</p></noscript>
+<footer class="wrap"><span>Cosmos3-Edge-Policy-DROID · Successful trajectory examples</span><span>Anonymous submission</span><a href="#top">Back to top ↑</a></footer>
+<noscript><p class="wrap">Enable JavaScript to use synchronized playback. Individual videos are also available in the assets/videos directory.</p></noscript>
 </body>
 </html>
